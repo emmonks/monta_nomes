@@ -105,7 +105,7 @@ if ordem == 1:
     snomes.sort()
 
 # Salva em arquivo o resultado da execucao
-with open(arquivosaida, 'w+') as f:
+with open(arquivosaida, 'w+',encoding='utf-8') as f:
 	# write elements of list
     for items in snomes:
         nomecompleto = " ".join(str(element) for element in items)
