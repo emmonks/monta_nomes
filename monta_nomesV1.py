@@ -87,7 +87,7 @@ while len(snomes) < qnomes:
     rsobre2 = sobrenomes[t2]
     t2 = random.randrange(0, len(sobrenomes))
     rsobre3 = sobrenomes[t2]
-#    print (str(len(snomes)) + " - " + str(qnomes) + " - " + str(t2))
+
 
     if (t0 >= 0) and (t0 < 3):
         if rnome + rsobre1 + rsobre2 + rsobre3 not in snomes:
@@ -103,7 +103,7 @@ while len(snomes) < qnomes:
 
 if ordem == 1:
     snomes.sort()
-print (snomes)
+
 # Salva em arquivo o resultado da execucao
 with open(arquivosaida, 'w+') as f:
 	# write elements of list
@@ -122,5 +122,4 @@ print ("Qte Nomes Gerados:" + str(len(snomes)))
 
 
 
-# Fecha o arquivo
-f.close()
+
