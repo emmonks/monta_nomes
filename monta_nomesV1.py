@@ -106,8 +106,7 @@ if ordem == 1:
 
 # Salva em arquivo o resultado da execucao
 with open(arquivosaida, 'w+',encoding='utf-8') as f:
-	# write elements of list
-    for items in snomes:
+	for items in snomes:
         nomecompleto = " ".join(str(element) for element in items)
         if acentos == 1:
              nomecompleto=f_remove_accents(nomecompleto)
