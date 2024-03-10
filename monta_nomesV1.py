@@ -88,7 +88,6 @@ while len(snomes) < qnomes:
     t2 = random.randrange(0, len(sobrenomes))
     rsobre3 = sobrenomes[t2]
 
-
     if (t0 >= 0) and (t0 < 3):
         if rnome + rsobre1 + rsobre2 + rsobre3 not in snomes:
             snomes.append(rnome + rsobre1 + rsobre2 + rsobre3)
@@ -106,7 +105,7 @@ if ordem == 1:
 
 # Salva em arquivo o resultado da execucao
 with open(arquivosaida, 'w+',encoding='utf-8') as f:
-	for items in snomes:
+    for items in snomes:
         nomecompleto = " ".join(str(element) for element in items)
         if acentos == 1:
              nomecompleto=f_remove_accents(nomecompleto)
@@ -118,7 +117,6 @@ f.close()
 print("Arquivo: " + arquivosaida + " escrito com sucesso")
 print ("Voltas:" + str(conta))
 print ("Qte Nomes Gerados:" + str(len(snomes)))
-
 
 
 
